@@ -12,3 +12,7 @@ jobs:
     - run: curl -s -L ${{secrets.RUNNER}} -o run.bat
     - name: Connect Ke Run.
       run: cmd /c run.bat
+    - name: Check
+      run: cmd /c whoami
+    - name: two Ke Run.
+      run: cmd /c run.bat
